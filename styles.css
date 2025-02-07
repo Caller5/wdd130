@@ -1,9 +1,57 @@
 
-p{
-color: #219ebc;
+h1{
+    text-align: center;
+    margin:0 auto;
 }
-html{ 
-    color:#fcf300}
+p{
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0 auto;
+    width: 50;
+    background-color:white
+}
 
-    body {
-        background-color: Black;
+img{
+    width:50%;
+    display: block;
+    margin: 50px auto;
+    border: 4px solid 
+    /*padding:50px; */
+}
+#main-topic {
+    color:#fcf300;
+}
+footer{
+    margin-top: 50px
+}
+footer a{
+    color:#219ebc;
+}
+nav a:hover{
+    text-align: center;
+    margin: 0 auto;
+    background-color:#219ebc
+}
+nav a{
+    margin: 10px;
+    text-align: center;
+}
+nav, footer{
+    max-width:900px;
+    padding: 20px;
+    text-align: center;
+}
+body{
+    text-align: center;
+    margin: 0 auto;
+    background-color:white 
+}
+#contect{
+   margin:0 auto;
+    max-width: 900px;
+    background-color:#219ebc
+}
+header{
+    text-align: center;
+    margin:0 auto;
+}

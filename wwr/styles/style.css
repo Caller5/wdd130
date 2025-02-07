@@ -1,18 +1,25 @@
-<!DOCTYPE html>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+.home-title{
+  margin-top: 10px;
+    font-size:2em;
+    font-family:'Times New Roman', Times, serif
+
+}
 div{
-max-width: 1600px;
-margin: 0 auto;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 #content{
-max-width: 1600px;
-margin: 0 auto;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 nav a{
     text-align: center;
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1{
     text-align: center;
@@ -25,51 +32,66 @@ nav a{
 }
 main section{
     text-align: center;
+    box-sizing: border-box
 }
-<section class="rapids-card">
-    <img class="card-img" src="images/rapids.jpg" alt="rafting boat">
-    <img class="icon" src="images/oars.png" alt="oars icon">
-    <h2>Rapids</h2>
-</section>
-<div id="background"></div> 
-<img class="mountains" src="images/mountains.jpg" alt="Misty mountains">
-<section class="msg">
-    <h2>Adventure Waiting to Happen</h2>
-    <p>This is the best way to take in the outdoors. You can see the most beatiful scenery with your family and friends! </p>
-    <a class='join' href="rivers.html">Join Us</a>
-</section>
 #background{
     height: 725px;
 }
-
 body{
-    background-color:#219ebc;
+    font-family:'Times New Roman', Times, serif;
+    background-color:lightskyblue;
+    padding:0;
+    margin: 0;
+    font-size: 22px;
+h2{
+    margin:0;
 }
+    
 header{
+    font-family:'Times New Roman', Times, serif;
     background-color:white;
 }
 nav a:hover{
-    background-color:#219ebc;
+    background-color:yellow;
 
 }
 .book, .join{
-    background-color:#219ebc;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 15px 30px;
+    background-color:lightskyblue;
     text-decoration: none;
+    font-size: 18px
 }
 .book:hover, .join:hover{
-    background-color:#219ebc;
+    background-color:yellow;
 }
 #background{
-    background-color:#219ebc;
+    background-color:lightskyblue;
 }
 .msg{
-    background-color:#219ebc;
+   padding:25px;
+    background-color:lightskyblue;
+    line-height: 1.5em;
+    font-size: .8em
+}
+.msg p{
+    padding-bottom:15px;
 }
 footer{
-    background-color:#219ebc;
+    background-color:lightskyblue;
+    padding: 25px 50px;
+    margin-top:200px;
+}
+footer .social img{
+    padding-top: 15px;
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+.card-img{
+    border: 10px solid lightskyblue;
 }
 #hero-img{
     width: 100%;
@@ -80,6 +102,18 @@ footer a{
 footer p{
     font-size: 1.2em;
 }
-footer p a:hover {
+footer p a:hover{
     text-decoration: underline;
 }
+#logo_link{
+  padding-top: 5px;
+}
+.rivers-card{
+margin:200px 0;
+}
+.camping-card{
+    margin:200px 0;
+}
+.rapids-card{
+    margin:200px 0;
+}}
