@@ -3,7 +3,7 @@ h1{
     text-align: center;
     margin:0 auto;
 }
-p{
+p{  display:grid;
     box-sizing: border-box;
     padding: 20px;
     margin: 0 auto;
