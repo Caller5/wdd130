@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+    <link rel="stylesheet" type="text/css" href="dice.css" />
+</head>
+<h1>
+    Dice
+</h1>
+<body>
+ const readline = require('readline-sync');
+
+let dieSides = parseInt(readline.question("How many sides do you want the die to be? "));
+
+while (dieSides !== 4 && dieSides !== 6 && dieSides !== 8 && dieSides !== 10 && dieSides !== 12 && dieSides !== 20) {
+    console.log("Please choose either a 4, 6, 8, 10, 12, or 20 sided die.");
+    dieSides = parseInt(readline.question("How many sides do you want the die to be? "));
+}
+
+const dice = Math.floor(Math.random() * dieSides) + 1;
+
+if (dice <= 9) {
+    console.log(
+                 ___________
+                |           |
+                |           |
+                |     ${dice}     |
+                |           |
+                |___________| 
+                );
+} else {
+    console.log(
+                 ___________
+                |           |
+                |           |
+                |    ${dice}     |
+                |           |
+                |___________| 
+                );
+}
+</body>
+</html>
