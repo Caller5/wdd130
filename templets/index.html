@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .dice {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dice Roller</h1>
+    <label for="dieSelect">Choose a die:</label>
+    <select id="dieSelect">
+        <option value="4">4-sided</option>
+        <option value="6">6-sided</option>
+        <option value="8">8-sided</option>
+        <option value="10">10-sided</option>
+        <option value="12">12-sided</option>
+        <option value="20">20-sided</option>
+    </select>
+    <button onclick="rollDice()">Roll</button>
+    <div>
+        <img class="dice" id="diceOutput" src="images/placeholder.webp" alt="Dice result">
+    </div>
+
+    <script>
+        function rollDice() {
+            let dieSides = parseInt(document.getElementById("dieSelect").value);
+            let diceRoll = Math.floor(Math.random() * dieSides) + 1;
+            let diceImage = `d${dieSides}-${diceRoll}.webp`;  // Correct string interpolation
+            document.getElementById("diceOutput").src = diceImage;
+        }
+    </script>
+</body>
+</html>
