@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     margin-bottom: 50px;
-  background-color:blue;
+  background-color:skyblue;
 }
 
 #bottom{
@@ -31,7 +31,7 @@ h1{
     grid-column: 3/4;
     margin:0,auto;
     text-align: center;
-    background-color:blue;
+    background-color:skyblue;
    
 }
 p{
@@ -90,6 +90,8 @@ div{
     margin:0,auto;
     grid-row:2;
     grid-column:2;
+    position:fixed;
+    
    
 }
 #one{
@@ -104,6 +106,7 @@ div{
     margin:0,auto;
     grid-column: 7/8;
     grid-row:2/4;
+    
 }
 body{
     background-color: skyblue;
@@ -138,3 +141,20 @@ body{
   
   .container .btn:hover {
         background-color: black;}
+
+        .container {
+            position: relative;
+            max-width: 800px; /* Maximum width */
+            margin: 0 auto; /* Center it */
+            z-index:1;
+          }
+          
+          .container .content {
+            position: absolute; /* Position the background text */
+            bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+            background: rgb(0, 0, 0); /* Fallback color */
+            background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+            color: #f1f1f1; /* Grey text */
+            width: 100%; /* Full width */
+            padding: 20px; /* Some padding */
+          }
