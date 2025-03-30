@@ -7,25 +7,31 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     margin-bottom: 50px;
-    background-color:skyblue;
+  background-color:blue;
 }
 
 #bottom{
     display:grid;
     grid-template-columns: repeat (3,1fr);
     grid-template-rows: repeat (3,1fr);
-    margin-top:200px;
+    margin-top:150px;
 }
 #info{
     display:grid;
     grid-template-columns: repeat(9,1fr);
-    margin-bottom: 10px; 
+    text-align:left;
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 90%;
+   
+    
     
 }
 h1{
     grid-column: 3/4;
     margin:0,auto;
     text-align: center;
+    background-color:blue;
    
 }
 p{
@@ -42,7 +48,7 @@ header{
     grid-column: 3/3;
     grid-row:2/3;
     width:100%;
-    height:100%;
+    height:110%;
     text-align:center;
     align-items:center;
     justify-items:center;
@@ -55,7 +61,7 @@ header{
     grid-column: 7/8;
     grid-row:2/4;
     width:100%;
-    height:100%;
+    height:110%;
     text-align:center;
     align-items:center;
     justify-items:center;
@@ -67,26 +73,31 @@ div{
     text-align:center;
     margin:0,auto;
     grid-column:5/6;
+    
 }
 
 #instagram{
    grid-column: 3;
    grid-column: 2;
+   
 }
 #facebook{
     grid-column:3;
+   
 }
 #random{
     text-align:center;
     margin:0,auto;
     grid-row:2;
-    grid-column:2
+    grid-column:2;
+   
 }
 #one{
     text-align:left;
     margin:0,auto;
     grid-column:3;
     grid-row:2;
+    
 }
 #two{
     text-align:left;
@@ -97,3 +108,33 @@ div{
 body{
     background-color: skyblue;
 }
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  /* Make the image responsive */
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .container .btn:hover {
+        background-color: black;}
