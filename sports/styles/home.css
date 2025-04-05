@@ -7,7 +7,9 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     margin-bottom: 50px;
-  background-color:skyblue;
+    margin:0,auto;
+    width: 100%;
+    background-color: blue;
 }
 
 #bottom{
@@ -15,6 +17,7 @@
     grid-template-columns: repeat (3,1fr);
     grid-template-rows: repeat (3,1fr);
     margin-top:150px;
+    background-color: blue;
 }
 #info{
     display:grid;
@@ -23,15 +26,13 @@
     padding: 20px; 
     margin: 20px auto; 
     max-width: 90%;
-   
-    
     
 }
 h1{
     grid-column: 3/4;
-    margin:0,auto;
+    margin:auto,0;
     text-align: center;
-    background-color:skyblue;
+    background-color: blue;
    
 }
 p{
@@ -73,7 +74,6 @@ div{
     text-align:center;
     margin:0,auto;
     grid-column:5/6;
-    
 }
 
 #instagram{
@@ -103,13 +103,14 @@ div{
 }
 #two{
     text-align:left;
-    margin:0,auto;
+    margin: 0,auto;
     grid-column: 7/8;
     grid-row:2/4;
     
 }
 body{
     background-color: skyblue;
+
 }
 
 .container {
@@ -117,13 +118,11 @@ body{
     width: 50%;
   }
   
-  /* Make the image responsive */
   .container img {
     width: 100%;
     height: auto;
   }
   
-  /* Style the button and place it in the middle of the container/image */
   .container .btn {
     position: absolute;
     top: 50%;
@@ -150,11 +149,11 @@ body{
           }
           
           .container .content {
-            position: absolute; /* Position the background text */
-            bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-            background: rgb(0, 0, 0); /* Fallback color */
-            background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-            color: #f1f1f1; /* Grey text */
-            width: 100%; /* Full width */
-            padding: 20px; /* Some padding */
+            position: absolute; 
+            bottom: 0; 
+            background: rgb(0, 0, 0); 
+            background: rgba(0, 0, 0, 0.5); 
+            color: #f1f1f1; 
+            width: 100%; 
+            padding: 20px; 
           }
