@@ -1,26 +1,30 @@
 body{
     display:grid;
- 
+    background-color: skyblue;
 }
 h1{
     text-align:center;
     margin-top:20px;
     font-size:2.5em;
+    background-color: blue;
+}
+header{
+    background-color: blue;
 }
 
 #NFL{
-text-align:center;
-padding-top:50px;
-padding-bottom:50px;
-border:5px solid;
-font-size:1.5em;
+    text-align:center;
+    padding-top:50px;
+    border:5px solid;
+    font-size:1.5em;
+    
 
 }
 
 #NBA{
     text-align:center;
     padding-top:50px;
-    padding-bottom:50px;
+    padding:50px;
     border:5px solid;
     font-size:1.5em;
     
@@ -30,7 +34,7 @@ font-size:1.5em;
 #NHL{
     text-align:center;
     padding-top:50px;
-    padding-bottom:50px;
+    padding:50px;
     border:5px solid;
     font-size:1.5em;
 }
@@ -38,7 +42,7 @@ font-size:1.5em;
 #MLB{
     text-align:center;
     padding-top:50px;
-    padding-bottom:50px;
+    padding:50px;
     border:5px solid;
     font-size:1.5em;
 }
@@ -47,3 +51,29 @@ body, html {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+Footer{
+    text-align:center;
+    margin-top:50px;
+    background-color: blue;
+    color:white
+}
+
+Footer {
+    background-color: blue;
+    color: white;  
+    padding: 20px;  
+    text-align: center;  
+    font-size: 1.2em;  
+}
+
+Footer a {
+    color: white;  
+    text-decoration: none;  
+    margin: 0 10px;  
+}
+
+Footer a:hover {
+    text-decoration: underline; 
+}
+
