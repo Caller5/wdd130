@@ -11,6 +11,7 @@
     padding:0px;
     width: 100%;
     background-color: blue;
+    
 
 }
 
@@ -175,3 +176,12 @@ div{
           footer a {
             color: white;   
         }
+
+        .contact {
+            display: block;
+            margin-top: 5px; 
+            font-size: 1em; 
+        }
+        
+
+        
